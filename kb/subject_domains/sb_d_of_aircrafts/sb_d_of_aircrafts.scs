@@ -1,0 +1,43 @@
+sc_node_struct -> sb_d_of_aircrafts;;
+sb_d_of_aircrafts <- subject_domain;;
+
+sb_d_of_aircrafts <- ui_start_sc_element;;
+
+sb_d_of_aircrafts => nrel_main_idtf:
+	[Предметная область летательных аппаратов](* <- lang_ru;; *);;
+
+sb_d_of_aircrafts -> rrel_maximum_studied_object_class: 
+	concept_aircraft;;
+
+sb_d_of_aircrafts -> rrel_not_maximum_studied_object_class:
+   concept_aerodynamic_aircraft;
+   concept_aerostatic_aircraft;
+   concept_civic_aircraft;
+   concept_manned_aircraft;
+   concept_military_aircraft;
+   concept_motor_aircraft;
+   concept_motorless_aircraft;
+   concept_muscle_powered_aircraft;
+   concept_unmanned_aircraft;
+   action_flight;;
+
+sb_d_of_aircrafts -> rrel_explored_relation:
+   nrel_power_units_count;
+   rrel_propolution_unit;
+   nrel_rotors_count;
+   nrel_wing_shape;
+   nrel_wings_count;;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: sb_d_of_aircrafts;;
+    <= nrel_sc_text_translation: ...
+        (*
+             -> "file://sb_d_of_aircrafts.html"(*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Пр.О. летательных аппаратов)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+            -> concept_aircraft;;
+        *);;
+*);;

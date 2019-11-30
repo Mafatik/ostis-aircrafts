@@ -1,0 +1,17 @@
+sc_node_not_relation -> concept_aircraft_model;;
+concept_aircraft_model => nrel_main_idtf: [модель летательного аппарата](*<- lang_ru ;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_aircraft_model;;
+    <= nrel_sc_text_translation: ...
+        (*
+             -> "file://htmls/concept_aircraft_model.html"(*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(модель летательного аппарата)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+            -> concept_aircraft;;
+            -> action_flight;;
+        *);;
+*);;

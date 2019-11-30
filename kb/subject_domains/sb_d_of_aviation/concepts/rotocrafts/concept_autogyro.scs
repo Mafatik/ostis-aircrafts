@@ -1,0 +1,28 @@
+sc_node_not_relation -> concept_autogyro;;
+concept_autogyro => nrel_main_idtf: [автожир](*<- lang_ru ;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_autogyro;;
+    <= nrel_sc_text_translation: ...
+        (*
+           -> "file://htmls/concept_autogyro.html"(*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(автожир)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+            -> concept_rotocraft;;
+            -> action_flight;;
+            -> concept_propolution_unit;;
+            -> concept_main_rotor;;
+        *);;
+*);;
+
+concept_autogyro <- rrel_key_sc_element: ...
+(*
+    <- illustration;;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> "file://images/concept_autogyro.jpg";;
+    *);;
+*);;

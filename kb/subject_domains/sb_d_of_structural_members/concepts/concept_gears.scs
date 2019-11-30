@@ -1,0 +1,26 @@
+sc_node_not_relation -> concept_gears;;
+concept_gears => nrel_main_idtf: [шасси](*<- lang_ru ;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_gears;;
+    <= nrel_sc_text_translation: ...
+        (*
+             -> "file://htmls/concept_gears.html"(*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(шасси)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+            -> concept_structural_member;;
+            -> concept_aircraft;;
+        *);;
+*);;
+
+concept_gears <- rrel_key_sc_element: ...
+(*
+    <- illustration;;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> "file://images/concept_gears.jpg";;
+    *);;
+*);;

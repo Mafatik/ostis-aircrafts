@@ -1,0 +1,26 @@
+sc_node_not_relation -> concept_piston_engine;;
+concept_piston_engine => nrel_main_idtf: [поршневой двигатель](*<- lang_ru ;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_piston_engine;;
+    <= nrel_sc_text_translation: ...
+        (*
+             -> "file://htmls/concept_piston_engine.html"(*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(поршневой двигатель)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+            -> concept_power_unit;;
+            -> concept_propolution_unit;;
+        *);;
+*);;
+
+concept_piston_engine <- rrel_key_sc_element: ...
+(*
+    <- illustration;;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> "file://images/concept_piston_engine.jpg";;
+    *);;
+*);;

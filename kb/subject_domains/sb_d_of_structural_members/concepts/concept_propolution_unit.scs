@@ -1,0 +1,19 @@
+sc_node_not_relation -> concept_propolution_unit;;
+concept_propolution_unit => nrel_main_idtf: [движитель](*<- lang_ru ;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_propolution_unit;;
+    <= nrel_sc_text_translation: ...
+        (*
+             -> "file://htmls/concept_propolution_unit.html"(*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(движитель)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+            -> concept_structural_member;;
+            -> concept_aircraft;;
+        *);;
+*);;
+
+concept_propolution_unit => nrel_inclusion: concept_propeller;;

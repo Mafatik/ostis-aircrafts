@@ -1,0 +1,38 @@
+sc_node_not_relation -> concept_aeroplane;;
+concept_aeroplane => nrel_main_idtf: [самолет](*<- lang_ru ;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_aeroplane;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> "file://htmls/concept_aeroplane.html"(*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(самолет)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+            -> concept_aircraft;;
+            -> concept_aerodynamic_aircraft;;
+            -> concept_motor_aircraft;;
+            -> concept_wing;;
+        *);;
+*);;
+
+concept_aeroplane => nrel_inclusion: concept_vtol;;
+
+concept_aeroplane <= nrel_subdividing: ...
+(*
+    => nrel_main_idtf: [разбиение по количеству крыльев](*<- lang_ru;;*);;
+    -> concept_monoplane;;
+    -> concept_biplane;;
+    -> concept_triplane;;
+*);;
+
+concept_aeroplane <- rrel_key_sc_element: ...
+(*
+    <- illustration;;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> "file://images/concept_aeroplane.jpg";;
+    *);;
+*);;

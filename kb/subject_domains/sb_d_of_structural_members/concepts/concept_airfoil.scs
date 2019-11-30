@@ -1,0 +1,25 @@
+sc_node_not_relation -> concept_airfoil;;
+concept_airfoil => nrel_main_idtf: [аэродинамическая поверхность](*<- lang_ru ;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_airfoil;;
+    <= nrel_sc_text_translation: ...
+        (*
+             -> "file://htmls/concept_airfoil.html"(*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(аэродинамическая поверхность)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+            -> concept_aerodynamic_aircraft;;
+        *);;
+*);;
+
+concept_airfoil <- rrel_key_sc_element: ...
+(*
+    <- illustration;;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> "file://images/concept_airfoil.jpg";;
+    *);;
+*);;

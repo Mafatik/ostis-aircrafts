@@ -1,0 +1,27 @@
+sc_node_not_relation -> concept_parachute;;
+concept_parachute => nrel_main_idtf: [парашют](*<- lang_ru ;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_parachute;;
+    <= nrel_sc_text_translation: ...
+        (*
+             -> "file://htmls/concept_parachute.html"(*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(парашют)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+            -> concept_aircraft;;
+            -> concept_aerodynamic_aircraft;;
+            -> concept_motorless_aircraft;;
+        *);;
+*);;
+
+concept_parachute <- rrel_key_sc_element: ...
+(*
+    <- illustration;;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> "file://images/concept_parachute.jpg";;
+    *);;
+*);;

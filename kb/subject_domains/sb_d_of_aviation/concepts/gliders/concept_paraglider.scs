@@ -1,0 +1,26 @@
+sc_node_not_relation -> concept_paraglider;;
+concept_paraglider => nrel_main_idtf: [параплан](*<- lang_ru ;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_paraglider;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> "file://htmls/concept_paraglider.html"(*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(параплан)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+            -> concept_glider;;
+            -> nrel_wing_shape;;
+        *);;
+*);;
+
+concept_paraglider <- rrel_key_sc_element: ...
+(*
+    <- illustration;;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> "file://images/concept_paraglider.jpg";;
+    *);;
+*);;

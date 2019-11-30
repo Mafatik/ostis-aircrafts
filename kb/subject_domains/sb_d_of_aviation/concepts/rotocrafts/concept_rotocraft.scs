@@ -1,0 +1,29 @@
+sc_node_not_relation -> concept_rotocraft;;
+concept_rotocraft => nrel_main_idtf: [вертолет](*<- lang_ru ;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_rotocraft;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> "file://htmls/concept_rotocraft.html"(*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(вертолет)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+            -> concept_aircraft;;
+            -> concept_aerodynamic_aircraft;;
+            -> concept_motor_aircraft;;
+            -> concept_main_rotor;;
+        *);;
+*);;
+
+concept_rotocraft <= nrel_subdividing: ...
+(*
+    => nrel_main_idtf: [разбиение по количеству несущих винтов](*<- lang_ru;;*);;
+    -> concept_monorotored_rotocraft;;
+    -> concept_multirotored_rotocraft;;
+    -> concept_twinrotored_rotocraft;;
+*);;
+
+concept_rotocraft -> rrel_propolution_unit: concept_main_rotor;;

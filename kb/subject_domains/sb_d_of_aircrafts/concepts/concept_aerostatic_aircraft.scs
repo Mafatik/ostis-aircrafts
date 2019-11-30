@@ -1,0 +1,21 @@
+sc_node_not_relation -> concept_aerostatic_aircraft;;
+concept_aerostatic_aircraft => nrel_main_idtf: [аэростатический летательный аппарат](*<- lang_ru ;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_aerostatic_aircraft;;
+    <= nrel_sc_text_translation: ...
+        (*
+             -> "file://htmls/concept_aerostatic_aircraft.html"(*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(аэростатический летательный аппарат)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+            -> concept_aircraft;;
+            -> action_flight;;
+        *);;
+*);;
+
+concept_aerostatic_aircraft => nrel_inclusion:
+    concept_free_balloon;
+    concept_dirigible;;

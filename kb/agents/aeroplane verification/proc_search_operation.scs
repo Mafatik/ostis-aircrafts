@@ -1,0 +1,27 @@
+//сам агент
+
+scp_program ->proc_search_operation
+(*
+    ->rrel_params: .proc_search_operation_params
+    (*
+        -> rrel_1: rrel_in: _parameter;;
+        -> rrel_2: rrel_in: _answer;;
+    *);;
+
+    ->rrel_operators: .proc_search_operation_operator_set
+    (*
+        ->rrel_init: .proc_search_operation_operator1
+        (*
+            <- printNl;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_const: rrel_link: [A-10 says BRRRRT!];;
+
+            => nrel_goto: .proc_search_operation_operator_return;;
+        *);;
+
+        -> .proc_search_operation_operator_return
+        (*
+            <- return;;
+        *);;
+    *);;
+*);;

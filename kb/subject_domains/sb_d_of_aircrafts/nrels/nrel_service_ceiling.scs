@@ -1,0 +1,39 @@
+sc_node_norole_relation -> nrel_service_ceiling;;
+
+nrel_service_ceiling => nrel_main_idtf: [практический потолок*](*<- lang_ru;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: nrel_service_ceiling;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> "file://htmls/nrel_service_ceiling.html"(*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(практический потолок*)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+            -> norole_relation;;
+            -> nrel_first_domain;;
+            -> nrel_second_domain;;
+            -> concept_aircraft;;
+            -> value;;
+            -> action_flight;;
+        *);;
+*);;
+
+nrel_service_ceiling => nrel_definitional_domain: ...
+(*
+    <= nrel_combination: ...
+    (*
+        -> concept_aircraft;;
+        -> value;;
+    *);;
+*);;
+nrel_service_ceiling => nrel_first_domain: concept_aircraft;;
+nrel_service_ceiling => nrel_srcond_domain: value;;
+
+binary_relation -> nrel_service_ceiling;;
+antireflexive_relation -> nrel_service_ceiling;;
+antitransitive_relation -> nrel_service_ceiling;;
+antisymmetric_relation -> nrel_service_ceiling;;
+oriented_relation -> nrel_service_ceiling;;

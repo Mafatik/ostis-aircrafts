@@ -1,0 +1,11 @@
+concept_jet_engine -> cfmi_cfm56_7be;;
+cfmi_cfm56_7be => nrel_main_idtf: [CFMI CFM56-7BE](*<- lang_ru;;*);;
+
+cfmi_cfm56_7be <- rrel_key_sc_element: ...
+(*
+    <- illustration;;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> "file://images/cfmi_cfm56_7be.jpg";;
+    *);;
+*);;

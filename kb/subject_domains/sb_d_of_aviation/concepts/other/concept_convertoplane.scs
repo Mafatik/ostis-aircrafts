@@ -1,0 +1,27 @@
+sc_node_not_relation -> concept_convertoplane;;
+concept_convertoplane => nrel_main_idtf: [конвертоплан](*<- lang_ru ;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_convertoplane;;
+    <= nrel_sc_text_translation: ...
+        (*
+           -> "file://htmls/concept_convertoplane.html"(*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(конвертоплан)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+            -> concept_aircraft;;
+            -> concept_aerodynamic_aircraft;;
+            -> concept_motor_aircraft;;
+        *);;
+*);;
+
+concept_convertoplane <- rrel_key_sc_element: ...
+(*
+    <- illustration;;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> "file://images/concept_convertoplane.jpg";;
+    *);;
+*);;

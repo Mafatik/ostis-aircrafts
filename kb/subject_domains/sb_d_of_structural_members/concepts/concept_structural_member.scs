@@ -1,0 +1,30 @@
+sc_node_not_relation -> concept_structural_member;;
+concept_structural_member => nrel_main_idtf: [элемент конструкции](*<- lang_ru ;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_structural_member;;
+    <= nrel_sc_text_translation: ...
+        (*
+             -> "file://htmls/concept_structural_member.html"(*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(элемент конструкции)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+            -> class;;
+            -> nrel_first_domain;;
+            -> nrel_second_domain;;
+            -> binary_sheaf;;
+            -> nrel_whole_part;;
+            -> concept_aircraft;;
+        *);;
+*);;
+
+concept_structural_member => nrel_inclusion:
+    concept_fuselage;
+    concept_power_unit;
+    concept_gears;
+    concept_glider_st_m;
+    concept_propolution_unit;
+    concept_tail;
+    concept_wing;;

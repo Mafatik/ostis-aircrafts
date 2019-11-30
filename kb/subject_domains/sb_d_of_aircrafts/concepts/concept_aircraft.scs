@@ -1,0 +1,53 @@
+sc_node_not_relation -> concept_aircraft;;
+concept_aircraft => nrel_main_idtf: [летательный аппарат](*<- lang_ru ;;*);;
+concept_aircraft => nrel_idtf: [ЛА](*<- lang_ru ;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_aircraft;;
+    <= nrel_sc_text_translation: ...
+        (*
+             -> "file://htmls/concept_aircraft.html"(*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(летательный аппарат)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+            -> action_flight;;
+        *);;
+*);;
+
+concept_aircraft <= nrel_subdividing: ...
+(*
+    => nrel_main_idtf: [разбиение по наличию силовой установки](*<- lang_ru;;*);;
+    -> concept_motor_aircraft;;
+    -> concept_motorless_aircraft;;
+*);;
+
+concept_aircraft <= nrel_subdividing: ...
+(*
+    => nrel_main_idtf: [разбиение по типу силовой установки](*<- lang_ru;;*);;
+    -> concept_muscle_powered_aircraft;;
+    -> concept_engine_aircraft;;
+*);;
+
+concept_aircraft <= nrel_subdividing: ...
+(*
+    => nrel_main_idtf: [разбиение по наличию пилота](*<- lang_ru;;*);;
+    -> concept_unmanned_aircraft;;
+    -> concept_manned_aircraft;;
+*);;
+
+concept_aircraft <= nrel_subdividing: ...
+(*
+    => nrel_main_idtf: [разбиение по принципу полета](*<- lang_ru;;*);;
+    -> concept_aerodynamic_aircraft;;
+    -> concept_aerostatic_aircraft;;
+    -> concept_rocketdynamic_aircraft;;
+*);;
+
+concept_aircraft <= nrel_subdividing: ...
+(*
+    => nrel_main_idtf: [разбиение по области применения](*<- lang_ru;;*);;
+    -> concept_civic_aircraft;;
+    -> concept_military_aircraft;;
+*);;

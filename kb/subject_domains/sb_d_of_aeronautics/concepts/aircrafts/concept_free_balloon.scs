@@ -1,0 +1,27 @@
+sc_node_not_relation -> concept_free_balloon;;
+concept_free_balloon => nrel_main_idtf: [воздушный шар](*<- lang_ru ;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_free_balloon;;
+    <= nrel_sc_text_translation: ...
+        (*
+             -> "file://htmls/concept_dirigible.html"(*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(воздушный шар)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+            -> concept_aircraft;;
+            -> concept_aerostatic_aircraft;;
+            -> concept_motorless_aircraft;;
+        *);;
+*);;
+
+concept_free_balloon <- rrel_key_sc_element: ...
+(*
+    <- illustration;;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> "file://images/concept_free_balloon.jpg";;
+    *);;
+*);;

@@ -1,0 +1,24 @@
+sc_node_not_relation -> concept_motor_aircraft;;
+concept_motor_aircraft => nrel_main_idtf: [двигательный летательный аппарат](*<- lang_ru ;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_motor_aircraft;;
+    <= nrel_sc_text_translation: ...
+        (*
+             -> "file://htmls/concept_motor_aircraft.html"(*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(моторный летательный аппарат)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+            -> concept_aircraft;;
+            -> rrel_power_unit;;
+            -> concept_motor;;
+        *);;
+*);;
+
+concept_motor_aircraft => nrel_inclusion:
+    concept_dirigible;
+    concept_aeroplane;
+    concept_convertoplane;
+    concept_rotocraft;;

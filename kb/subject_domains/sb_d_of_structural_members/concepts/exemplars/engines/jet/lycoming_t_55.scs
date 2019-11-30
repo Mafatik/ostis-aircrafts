@@ -1,0 +1,11 @@
+concept_jet_engine -> lycoming_t_55;;
+lycoming_t_55 => nrel_main_idtf: [Lycoming T55](*<- lang_ru;;*);;
+
+lycoming_t_55 <- rrel_key_sc_element: ...
+(*
+    <- illustration;;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> "file://images/lycoming_t_55.jpg";;
+    *);;
+*);;

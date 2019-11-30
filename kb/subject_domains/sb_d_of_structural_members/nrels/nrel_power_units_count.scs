@@ -1,0 +1,40 @@
+sc_node_norole_relation -> nrel_power_units_count;;
+
+nrel_power_units_count => nrel_main_idtf: [число силовых установок*](*<- lang_ru;;*);;
+nrel_power_units_count => nrel_idtf: [количество силовых установок*](*<- lang_ru;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: nrel_power_units_count;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> "file://htmls/nrel_power_units_count.html"(*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(число силовых установок*)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+            -> norole_relation;;
+            -> nrel_first_domain;;
+            -> concept_aircraft;;
+            -> natural_number;;
+            -> sc_arc_membership;;
+            -> concept_power_unit;;
+        *);;
+*);;
+
+nrel_power_units_count => nrel_definitional_domain: ...
+(*
+    <= nrel_combination: ...
+    (*
+        -> concept_aircraft;;
+        -> natural_number;;
+    *);;
+*);;
+nrel_power_units_count => nrel_first_domain: concept_aircraft;;
+nrel_power_units_count => nrel_srcond_domain: natural_number;;
+
+binary_relation -> nrel_power_units_count;;
+antireflexive_relation -> nrel_power_units_count;;
+antitransitive_relation -> nrel_power_units_count;;
+antisymmetric_relation -> nrel_power_units_count;;
+oriented_relation -> nrel_power_units_count;;

@@ -1,0 +1,13 @@
+boeing_ch_47_06_08025 => nrel_main_idtf: [Boeing CH-47 06-08025](*<- lang_ru;;*);;
+boeing_ch_47_06_08025 => nrel_aircraft_model: boeing_ch_47;;
+
+boeing_ch_47_06_08025 => nrel_board_number: [06-08025](*<- lang_ru;;*);;
+
+boeing_ch_47_06_08025 <- rrel_key_sc_element: ...
+(*
+    <- illustration;;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> "file://images/boeing_ch_47_06_08025.jpg";;
+    *);;
+*);;

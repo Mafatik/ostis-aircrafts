@@ -1,0 +1,19 @@
+sc_node_not_relation -> concept_mass_center_driven_glider;;
+concept_mass_center_driven_glider => nrel_main_idtf: [управляемый центром масс планер](*<- lang_ru ;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_mass_center_driven_glider;;
+    <= nrel_sc_text_translation: ...
+        (*
+             -> "file://htmls/concept_mass_center_driven_glider.html"(*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(управляемый центром масс планер)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+            -> concept_glider;;
+        *);;
+*);;
+
+concept_mass_center_driven_glider => nrel_inclusion: concept_paraglider;;
+concept_mass_center_driven_glider => nrel_inclusion: concept_hangglider;;

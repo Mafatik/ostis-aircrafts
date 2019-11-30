@@ -1,0 +1,19 @@
+sc_node_not_relation -> concept_glider_st_m;;
+concept_glider_st_m => nrel_main_idtf: [планер (элемент конструкции)](*<- lang_ru ;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_glider_st_m;;
+    <= nrel_sc_text_translation: ...
+        (*
+             -> "file://htmls/concept_glider_st_m.html"(*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(планер (элемент конструкции))](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+            -> concept_structural_member;;
+            -> nrel_inclusion;;
+            -> concept_aircraft;;
+            -> concept_power_unit;;
+        *);;
+*);;

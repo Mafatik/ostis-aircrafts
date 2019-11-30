@@ -1,0 +1,26 @@
+sc_node_not_relation -> sb_d_of_aeronautics;;
+sb_d_of_aeronautics => nrel_main_idtf: [Предметная область воздухоплавания](*<- lang_ru ;;*);;
+
+sb_d_of_aeronautics <= nrel_private_subject_domain: sb_d_of_aircrafts;;
+
+sb_d_of_aeronautics -> rrel_maximum_studied_object_class: 
+	concept_aerostatic_aircraft;;
+
+sb_d_of_aeronautics -> rrel_not_maximum_studied_object_class:
+   concept_dirigible;
+   concept_free_balloon;;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: sb_d_of_aeronautics;;
+    <= nrel_sc_text_translation: ...
+        (*
+             -> "file://sb_d_of_aeronautics.html"(*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Предметная область воздухоплавания)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+            -> concept_aircraft;;
+            -> concept_aerostatic_aircraft;;
+        *);;
+*);;

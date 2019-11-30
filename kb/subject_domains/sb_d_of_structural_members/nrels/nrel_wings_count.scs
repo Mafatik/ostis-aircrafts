@@ -1,0 +1,40 @@
+sc_node_norole_relation -> nrel_wings_count;;
+
+nrel_wings_count => nrel_main_idtf: [число крыльев*](*<- lang_ru;;*);;
+nrel_wings_count => nrel_idtf: [количество крыльев*](*<- lang_ru;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: nrel_wings_count;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> "file://htmls/nrel_wings_count.html"(*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(число крыльев*)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+            -> norole_relation;;
+            -> nrel_first_domain;;
+            -> concept_aerodynamic_aircraft;;
+            -> natural_number;;
+            -> sc_arc_membership;;
+            -> concept_wing;;
+        *);;
+*);;
+
+nrel_wings_count => nrel_definitional_domain: ...
+(*
+    <= nrel_combination: ...
+    (*
+        -> concept_aerodynamic_aircraft;;
+        -> natural_number;;
+    *);;
+*);;
+nrel_wings_count => nrel_first_domain: concept_aerodynamic_aircraft;;
+nrel_wings_count => nrel_srcond_domain: natural_number;;
+
+binary_relation -> nrel_wings_count;;
+antireflexive_relation -> nrel_wings_count;;
+antitransitive_relation -> nrel_wings_count;;
+antisymmetric_relation -> nrel_wings_count;;
+oriented_relation -> nrel_wings_count;;

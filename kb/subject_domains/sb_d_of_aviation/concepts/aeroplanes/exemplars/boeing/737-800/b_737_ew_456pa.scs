@@ -1,0 +1,13 @@
+b_737_ew456pa => nrel_main_idtf: [Boeing 737 EW-456PA](*<- lang_ru;;*);;
+b_737_ew456pa => nrel_aircraft_model: boeing_737_800;;
+
+b_737_ew456pa => nrel_board_number: [EW-456PA](*<- lang_ru;;*);;
+
+b_737_ew456pa <- rrel_key_sc_element: ...
+(*
+    <- illustration;;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> "file://images/b_737_ew456pa.jpg";;
+    *);;
+*);;

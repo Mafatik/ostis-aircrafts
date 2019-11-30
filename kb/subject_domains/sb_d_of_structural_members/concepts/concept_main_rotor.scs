@@ -1,0 +1,25 @@
+sc_node_not_relation -> concept_main_rotor;;
+concept_main_rotor => nrel_main_idtf: [несущий винт](*<- lang_ru ;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_main_rotor;;
+    <= nrel_sc_text_translation: ...
+        (*
+             -> "file://htmls/concept_main_rotor.html"(*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(несущий винт)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+            -> concept_propeller;;
+        *);;
+*);;
+
+concept_main_rotor <- rrel_key_sc_element: ...
+(*
+    <- illustration;;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> "file://images/concept_main_rotor.jpg";;
+    *);;
+*);;

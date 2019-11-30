@@ -1,0 +1,16 @@
+sc_node_not_relation -> concept_engine_aircraft;;
+concept_engine_aircraft => nrel_main_idtf: [моторный летательный аппарат](*<- lang_ru ;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_engine_aircraft;;
+    <= nrel_sc_text_translation: ...
+        (*
+             -> "file://htmls/concept_engine_aircraft.html"(*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(моторный летательный аппарат)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+            -> action_flight;;
+        *);;
+*);;

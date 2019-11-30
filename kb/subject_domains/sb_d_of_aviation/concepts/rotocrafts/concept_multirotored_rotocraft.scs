@@ -1,0 +1,27 @@
+sc_node_not_relation -> concept_multirotored_rotocraft;;
+concept_multirotored_rotocraft => nrel_main_idtf: [вертолет с несколькими несущими винтами](*<- lang_ru ;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_multirotored_rotocraft;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> "file://htmls/concept_multirotored_rotocraft.html"(*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(вертолет с двумя несущими винтами)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+            -> concept_rotocraft;;
+            -> concept_main_rotor;;
+            -> nrel_rotors_count;;
+        *);;
+*);;
+
+concept_multirotored_rotocraft <- rrel_key_sc_element: ...
+(*
+    <- illustration;;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> "file://images/concept_multirotored_rotocraft.jpg";;
+    *);;
+*);;

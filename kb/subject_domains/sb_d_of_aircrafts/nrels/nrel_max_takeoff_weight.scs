@@ -1,0 +1,39 @@
+sc_node_norole_relation -> nrel_max_takeoff_weight;;
+
+nrel_max_takeoff_weight => nrel_main_idtf: [максимальная взлетная масса*](*<- lang_ru;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: nrel_max_takeoff_weight;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> "file://htmls/nrel_max_takeoff_weight.html"(*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(максимальная взлетная масса*)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+            -> norole_relation;;
+            -> nrel_first_domain;;
+            -> nrel_second_domain;;
+            -> concept_aircraft;;
+            -> value;;
+            -> action_flight;;
+        *);;
+*);;
+
+nrel_max_takeoff_weight => nrel_definitional_domain: ...
+(*
+    <= nrel_combination: ...
+    (*
+        -> concept_aircraft;;
+        -> value;;
+    *);;
+*);;
+nrel_max_takeoff_weight => nrel_first_domain: concept_aircraft;;
+nrel_max_takeoff_weight => nrel_srcond_domain: value;;
+
+binary_relation -> nrel_max_takeoff_weight;;
+antireflexive_relation -> nrel_max_takeoff_weight;;
+antitransitive_relation -> nrel_max_takeoff_weight;;
+antisymmetric_relation -> nrel_max_takeoff_weight;;
+oriented_relation -> nrel_max_takeoff_weight;;

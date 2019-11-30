@@ -1,0 +1,38 @@
+sc_node_norole_relation -> nrel_board_number;;
+
+nrel_board_number => nrel_main_idtf: [бортовой номер*](*<- lang_ru;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: nrel_board_number;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> "file://htmls/nrel_board_number.html"(*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(бортовой номер*)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+            -> norole_relation;;
+            -> nrel_first_domain;;
+            -> nrel_second_domain;;
+            -> concept_aircraft;;
+            -> string_sc_identifier;;
+        *);;
+*);;
+
+nrel_board_number => nrel_definitional_domain: ...
+(*
+    <= nrel_combination: ...
+    (*
+        -> concept_aircraft;;
+        -> string_sc_identifier;;
+    *);;
+*);;
+nrel_board_number => nrel_first_domain: concept_aircraft;;
+nrel_board_number => nrel_srcond_domain: natural_number;;
+
+binary_relation -> nrel_board_number;;
+antireflexive_relation -> nrel_board_number;;
+antitransitive_relation -> nrel_board_number;;
+antisymmetric_relation -> nrel_board_number;;
+oriented_relation -> nrel_board_number;;

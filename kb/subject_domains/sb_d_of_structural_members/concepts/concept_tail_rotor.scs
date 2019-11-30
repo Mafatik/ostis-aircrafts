@@ -1,0 +1,28 @@
+sc_node_not_relation -> concept_tail_rotor;;
+concept_tail_rotor => nrel_main_idtf: [рулевой винт](*<- lang_ru ;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_tail_rotor;;
+    <= nrel_sc_text_translation: ...
+        (*
+             -> "file://htmls/concept_tail_rotor.html"(*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(рулевой винт)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+            -> concept_propeller;;
+            -> concept_tail;;
+            -> concept_monorotored_rotorcaft;;
+            -> concept_main_rotor;;
+        *);;
+*);;
+
+concept_tail_rotor <- rrel_key_sc_element: ...
+(*
+    <- illustration;;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> "file://images/concept_tail_rotor.jpg";;
+    *);;
+*);;

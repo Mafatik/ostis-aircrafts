@@ -1,0 +1,28 @@
+sc_node_not_relation -> concept_transverse_rotocraft;;
+concept_transverse_rotocraft => nrel_main_idtf: [вертолет с поперечным расположением несущих винтов](*<- lang_ru ;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_transverse_rotocraft;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> "file://htmls/concept_transverse_rotocraft.html"(*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(вертолет с поперечным расположением несущих винтов)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+            -> concept_rotocraft;;
+            -> concept_main_rotor;;
+        *);;
+*);;
+
+concept_transverse_rotocraft => nrel_inclusion: concept_synchropter;;
+
+concept_transverse_rotocraft <- rrel_key_sc_element: ...
+(*
+    <- illustration;;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> "file://images/concept_transverse_rotocraft.jpg";;
+    *);;
+*);;

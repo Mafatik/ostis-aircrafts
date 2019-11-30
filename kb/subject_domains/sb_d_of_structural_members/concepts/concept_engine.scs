@@ -1,0 +1,26 @@
+sc_node_not_relation -> concept_engine;;
+concept_engine => nrel_main_idtf: [двигатель](*<- lang_ru ;;*);;
+concept_engine => nrel_idtf: [мотор](*<- lang_ru ;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_engine;;
+    <= nrel_sc_text_translation: ...
+        (*
+             -> "file://htmls/concept_engine.html"(*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(двигатель)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+            -> concept_structural_member;;
+            -> concept_propolution_unit;;
+        *);;
+*);;
+
+concept_engine <= nrel_subdividing: ...
+(*
+    => nrel_main_idtf: [разбиение по принципу работы](*<- lang_ru;;*);;
+    -> concept_jet_engine;;
+    -> concept_piston_engine;;
+    -> concept_electric_engine;;
+*);;

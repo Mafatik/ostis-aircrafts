@@ -1,0 +1,28 @@
+sc_node_not_relation -> concept_orbit;;
+concept_orbit => nrel_main_idtf: [орбита](*<- lang_ru ;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_orbit;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> "file://htmls/concept_orbit.html"(*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(орбита)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+            -> concept_aircraft;;
+            -> concept_aerodynamic_aircraft;;
+            -> concept_motor_aircraft;;
+            -> concept_wing;;
+        *);;
+*);;
+
+concept_orbit <- rrel_key_sc_element: ...
+(*
+    <- illustration;;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> "file://images/concept_orbit.jpg";;
+    *);;
+*);;

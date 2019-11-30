@@ -1,0 +1,41 @@
+sc_node_struct -> sb_d_of_structural_members;;
+sb_d_of_structural_members <- subject_domain;;
+
+sb_d_of_structural_members => nrel_main_idtf:
+	[Предметная область элементов конструкции](* <- lang_ru;; *);;
+
+sb_d_of_structural_members <= nrel_private_subject_domain: sb_d_of_aircrafts;;
+
+sb_d_of_structural_members -> rrel_maximum_studied_object_class: 
+	concept_structural_member;;
+
+sb_d_of_structural_members -> rrel_not_maximum_studied_object_class:
+   concept_electric_engine;
+   concept_engine;
+   concept_fuselage;
+   concept_gears;
+   concept_glider_st_m;
+   concept_jet_engine;
+   concept_main_rotor;
+   concept_piston_engine;
+   concept_power_unit;
+   concept_propeller;
+   concept_propolution_unit;
+   concept_structural_member;
+   concept_tail;
+   concept_wing;;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: sb_d_of_structural_members;;
+    <= nrel_sc_text_translation: ...
+        (*
+             -> "file://sb_d_of_structural_members.html"(*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Пр.О. элементов конструкции)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+            -> concept_aircraft;;
+            -> concept_structural_member;;
+        *);;
+*);;

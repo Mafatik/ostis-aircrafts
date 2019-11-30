@@ -1,0 +1,30 @@
+boeing_737_800 => nrel_main_idtf: [Boeing 737-800](*<- lang_ru;;*);;
+
+concept_aeroplane -> boeing_737_800;;
+concept_monoplane -> boeing_737_800;;
+concept_civic_aircraft -> boeing_737_800;;
+concept_manned_aircraft -> boeing_737_800;;
+concept_motor_aircraft -> boeing_737_800;;
+
+concept_aircraft_model -> boeing_737_800;;
+boeing_737_800 => nrel_manufacturer: boeing;;
+
+boeing_737_800 -> rrel_power_unit: cfmi_cfm56_7be;;
+boeing_737_800 => nrel_power_units_count: [2];;
+
+boeing_737_800 => nrel_ferry_range: [5,500 м. миль];;
+boeing_737_800 => nrel_max_speed: [583 миль/час];;
+boeing_737_800 => nrel_max_takeoff_weight: [70535 кг];;
+boeing_737_800 => nrel_max_takeoff_weight: [13600 кг];;
+boeing_737_800 => nrel_max_payload: [41000 футов];;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_aeroplane;;
+    -> rrel_key_sc_element: boeing_737_800;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Boeing 737-800 -- самый массовый гражданский самолет в мире](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Boeing 737-800)](*<- lang_ru;;*);;
+*);;

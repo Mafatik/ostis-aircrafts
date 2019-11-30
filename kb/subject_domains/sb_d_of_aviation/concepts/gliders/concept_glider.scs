@@ -1,0 +1,25 @@
+sc_node_not_relation -> concept_glider;;
+concept_glider => nrel_main_idtf: [планер](*<- lang_ru ;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_glider;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> "file://htmls/concept_glider.html"(*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(планер)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+            -> concept_aircraft;;
+            -> concept_aerodynamic_aircraft;;
+            -> concept_motorless_aircraft;;
+        *);;
+*);;
+
+concept_glider <= nrel_subdividing: ...
+(*
+    => nrel_main_idtf: [разбиение по принципу управления](*<- lang_ru;;*);;
+    -> concept_aerodynamic_driven_glider;;
+    -> concept_mass_center_driven_glider;;
+*);;

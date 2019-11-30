@@ -1,0 +1,27 @@
+sc_node_not_relation -> concept_monoplane;;
+concept_monoplane => nrel_main_idtf: [моноплан](*<- lang_ru ;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_monoplane;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> "file://htmls/concept_monoplane.html"(*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(моноплан)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+            -> concept_aeroplane;;
+            -> concept_wing;;
+            -> nrel_wings_count;;
+        *);;
+*);;
+
+concept_monoplane <- rrel_key_sc_element: ...
+(*
+    <- illustration;;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> "file://images/concept_monoplane.jpg";;
+    *);;
+*);;

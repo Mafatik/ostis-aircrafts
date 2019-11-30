@@ -1,0 +1,17 @@
+sc_node_not_relation -> concept_muscle_powered_aircraft;;
+concept_muscle_powered_aircraft => nrel_main_idtf: [летательный аппрат на мускульной тяге](*<- lang_ru ;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_muscle_powered_aircraft;;
+    <= nrel_sc_text_translation: ...
+        (*
+             -> "file://htmls/concept_muscle_powered_aircraft.html"(*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(летательный аппрат на мускульной тяге)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+            -> concept_aircraft;;
+            -> rrel_power_unit;;
+        *);;
+*);;

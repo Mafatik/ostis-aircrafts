@@ -1,0 +1,29 @@
+sc_node_not_relation -> concept_orbital_plane;;
+concept_orbital_plane => nrel_main_idtf: [орбитальный самолет](*<- lang_ru ;;*);;
+concept_orbital_plane => nrel_idtf: [воздушно-космический самолет](*<- lang_ru ;;*);;
+concept_orbital_plane => nrel_idtf: [воздушно-космический летательный аппарат](*<- lang_ru ;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_orbital_plane;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> "file://htmls/concept_orbital_plane.html"(*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(орбитальный самолет)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+            -> concept_orbital_station;;
+            -> action_flight;;
+            -> concept_wing;;
+        *);;
+*);;
+
+concept_orbital_plane <- rrel_key_sc_element: ...
+(*
+    <- illustration;;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> "file://images/concept_orbital_plane.jpg";;
+    *);;
+*);;

@@ -1,0 +1,27 @@
+sc_node_not_relation -> concept_launch_vehicle;;
+concept_launch_vehicle => nrel_main_idtf: [ракета-носитель](*<- lang_ru ;;*);;
+concept_launch_vehicle => nrel_idtf: [launch vehicle](*<- lang_ru ;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_launch_vehicle;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> "file://htmls/concept_launch_vehicle.html"(*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(ракета-носитель)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+            -> concept_rocketdynamic_aircraft;;
+            -> concept_payload;;
+        *);;
+*);;
+
+concept_launch_vehicle <- rrel_key_sc_element: ...
+(*
+    <- illustration;;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> "file://images/concept_launch_vehicle.jpg";;
+    *);;
+*);;

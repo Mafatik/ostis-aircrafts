@@ -1,0 +1,28 @@
+sc_node_not_relation -> concept_spacecraft;;
+concept_spacecraft => nrel_main_idtf: [космический корабль](*<- lang_ru ;;*);;
+concept_spacecraft => nrel_idtf: [космический аппарат](*<- lang_ru ;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_spacecraft;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> "file://htmls/concept_spacecraft.html"(*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(космический корабль)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+            -> concept_aircraft;;
+            -> concept_rocketdynamic_aircraft;;
+            -> action_flight;;
+        *);;
+*);;
+
+concept_spacecraft <- rrel_key_sc_element: ...
+(*
+    <- illustration;;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> "file://images/concept_spacecraft.jpg";;
+    *);;
+*);;

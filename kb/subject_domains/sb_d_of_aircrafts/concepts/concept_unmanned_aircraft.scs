@@ -1,0 +1,16 @@
+sc_node_not_relation -> concept_unmanned_aircraft;;
+concept_unmanned_aircraft => nrel_main_idtf: [беспилотный летательный аппарат](*<- lang_ru ;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_unmanned_aircraft;;
+    <= nrel_sc_text_translation: ...
+        (*
+             -> "file://htmls/concept_unmanned_aircraft.html"(*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(беспилотный летательный аппарат)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+            -> concept_aircraft;;
+        *);;
+*);;

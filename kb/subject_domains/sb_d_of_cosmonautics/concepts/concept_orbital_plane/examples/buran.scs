@@ -1,0 +1,31 @@
+//Некоторые материалы взяты с сайта http://www.buran.ru
+
+Buran => nrel_main_idtf: [Орбитальный самолет Буран](*<- lang_ru;;*);;
+
+concept_orbital_plane -> Buran;;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_orbital_plane;;
+    -> rrel_key_sc_element: Buran;;
+    -> rrel_key_sc_element: action_flight;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Орбитальный самолет Буран совершил свой первый и единственный полет 15 ноября 1988 года.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Орбитальный самолет Буран)](*<- lang_ru;;*);;
+*);;
+
+Buran <- rrel_key_sc_element: ...
+(*
+    <- illustration;;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> "file://images/buran_cargo.jpg";;
+    *);;
+*);;
+
+boeing_ch_47 => nrel_manufacturer: molniya;;
+
+boeing_ch_47 => nrel_max_takeoff_weight: [105 тонн];;
+boeing_ch_47 => nrel_max_payload: [30 тонн];;

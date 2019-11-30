@@ -1,0 +1,26 @@
+sc_node_not_relation -> concept_hangglider;;
+concept_hangglider => nrel_main_idtf: [дельтаплан](*<- lang_ru ;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_hangglider;;
+    <= nrel_sc_text_translation: ...
+        (*
+             -> "file://htmls/concept_hangglider.html"(*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(дельтаплан)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+            -> concept_glider;;
+            -> nrel_wing_shape;;
+        *);;
+*);;
+
+concept_hangglider <- rrel_key_sc_element: ...
+(*
+    <- illustration;;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> "file://images/concept_hangglider.jpg";;
+    *);;
+*);;

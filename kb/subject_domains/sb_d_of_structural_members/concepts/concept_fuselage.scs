@@ -1,0 +1,27 @@
+sc_node_not_relation -> concept_fuselage;;
+concept_fuselage => nrel_main_idtf: [фюзеляж](*<- lang_ru ;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_fuselage;;
+    <= nrel_sc_text_translation: ...
+        (*
+             -> "file://htmls/concept_fuselage.html"(*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(фюзеляж)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+            -> concept_structural_member;;
+            -> concept_wing;;
+            -> concept_tail;;
+        *);;
+*);;
+
+concept_fuselage <- rrel_key_sc_element: ...
+(*
+    <- illustration;;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> "file://images/concept_fuselage.jpg";;
+    *);;
+*);;

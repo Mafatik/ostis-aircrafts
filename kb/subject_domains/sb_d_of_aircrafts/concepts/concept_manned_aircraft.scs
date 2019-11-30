@@ -1,0 +1,16 @@
+sc_node_not_relation -> concept_manned_aircraft;;
+concept_manned_aircraft => nrel_main_idtf: [пилотируемый летательный аппарат](*<- lang_ru ;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_manned_aircraft;;
+    <= nrel_sc_text_translation: ...
+        (*
+             -> "file://htmls/concept_manned_aircraft.html"(*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(пилотируемый летательный аппарат)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+            -> concept_aircraft;;
+        *);;
+*);;

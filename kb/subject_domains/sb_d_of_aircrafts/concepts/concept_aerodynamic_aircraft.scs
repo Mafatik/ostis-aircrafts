@@ -1,0 +1,24 @@
+sc_node_not_relation -> concept_aerodynamic_aircraft;;
+concept_aerodynamic_aircraft => nrel_main_idtf: [аэродинамический летательный аппарат](*<- lang_ru ;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_aerodynamic_aircraft;;
+    <= nrel_sc_text_translation: ...
+        (*
+             -> "file://htmls/concept_aerodynamic_aircraft.html"(*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(аэродинаический летательный аппарат)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+            -> concept_aircraft;;
+            -> action_flight;;
+        *);;
+*);;
+
+concept_aerodynamic_aircraft => nrel_inclusion:
+    concept_aeroplane;
+    concept_rotocraft;
+    concept_glider;
+    concept_convertoplane;
+    concept_parachute;;

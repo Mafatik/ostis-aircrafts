@@ -1,0 +1,19 @@
+sc_node_not_relation -> concept_interplanetary_station;;
+concept_interplanetary_station => nrel_main_idtf: [межпланетная станция](*<- lang_ru ;;*);;
+
+concept_unmanned_aircraft -> concept_interplanetary_station;;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_interplanetary_station;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> "file://htmls/concept_interplanetary_station.html"(*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(межпланетная станция)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+            -> concept_spacecraft;;
+            -> action_flight;;
+        *);;
+*);;

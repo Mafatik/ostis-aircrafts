@@ -1,0 +1,40 @@
+sc_node_norole_relation -> nrel_rotors_count;;
+
+nrel_rotors_count => nrel_main_idtf: [число несущих винтов*](*<- lang_ru;;*);;
+nrel_power_units_count => nrel_idtf: [количество чесущих винтов*](*<- lang_ru;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: nrel_rotors_count;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> "file://htmls/nrel_rotors_count.html"(*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(число несущих винтов)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+            -> norole_relation;;
+            -> nrel_first_domain;;
+            -> concept_rotocraft;;
+            -> natural_number;;
+            -> sc_arc_membership;;
+            -> concept_main_rotor;;
+        *);;
+*);;
+
+nrel_rotors_count => nrel_definitional_domain: ...
+(*
+    <= nrel_combination: ...
+    (*
+        -> concept_rotocraft;;
+        -> natural_number;;
+    *);;
+*);;
+nrel_rotors_count => nrel_first_domain: concept_rotocraft;;
+nrel_rotors_count => nrel_second_domain: natural_number;;
+
+binary_relation -> nrel_rotors_count;;
+antireflexive_relation -> nrel_rotors_count;;
+antitransitive_relation -> nrel_rotors_count;;
+antisymmetric_relation -> nrel_rotors_count;;
+oriented_relation -> nrel_rotors_count;;

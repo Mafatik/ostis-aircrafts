@@ -1,0 +1,26 @@
+sc_node_not_relation -> concept_twinrotored_rotocraft;;
+concept_twinrotored_rotocraft => nrel_main_idtf: [вертолет с двумя несущими винтами](*<- lang_ru ;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_twinrotored_rotocraft;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> "file://htmls/concept_rotocraft.html"(*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(вертолет с двумя несущими винтами)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+            -> concept_rotocraft;;
+            -> concept_main_rotor;;
+            -> nrel_rotors_count;;
+        *);;
+*);;
+
+concept_twinrotored_rotocraft <= nrel_subdividing: ...
+(*
+    => nrel_main_idtf: [разбиение по принципу размещения винтов](*<- lang_ru;;*);;
+    -> concept_coaxical_rotocraft;;
+    -> concept_longitudinal_rotocraft;;
+    -> concept_transverse_rotocraft;;
+*);;

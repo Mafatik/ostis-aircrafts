@@ -1,0 +1,18 @@
+boeing_ch_47 => nrel_main_idtf: [Boeing CH-47](*<- lang_ru;;*);;
+
+concept_longitudinal_rotocraft -> boeing_ch_47;;
+concept_military_aircraft -> boeing_ch_47;;
+concept_manned_aircraft -> boeing_ch_47;;
+concept_motor_aircraft -> boeing_ch_47;;
+
+boeing_ch_47_06_08025 -> rrel_power_unit: lycoming_t_55;;
+boeing_ch_47_06_08025 => nrel_power_units_count: [2];;
+
+concept_aircraft_model -> boeing_ch_47;;
+boeing_ch_47 => nrel_manufacturer: boeing;;
+
+boeing_ch_47 => nrel_ferry_range: [1260 м. миль];;
+boeing_ch_47 => nrel_max_speed: [177 миль/час];;
+boeing_ch_47 => nrel_max_takeoff_weight: [24494 кг];;
+boeing_ch_47 => nrel_max_payload: [4535 кг];;
+boeing_ch_47 => nrel_service_ceiling: [10138 футов];;

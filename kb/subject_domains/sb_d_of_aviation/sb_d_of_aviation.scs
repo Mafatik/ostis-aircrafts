@@ -1,0 +1,56 @@
+sc_node_struct -> sb_d_of_aviation;;
+sb_d_of_aviation <- subject_domain;;
+
+sb_d_of_aviation => nrel_main_idtf:
+	[Предметная область авиации](* <- lang_ru;; *);;
+
+sb_d_of_aviation <= nrel_private_subject_domain: sb_d_of_aircrafts;;
+
+sb_d_of_aviation -> rrel_maximum_studied_object_class: 
+	concept_aerodynamic_aircraft;;
+
+sb_d_of_aviation -> rrel_not_maximum_studied_object_class:
+    concept_aeroplane;
+    concept_biplane;
+    concept_monoplane;
+    concept_triplane;
+    concept_vtol;
+    concept_rotocraft;
+    concept_coaxical_rotocraft;
+    concept_longitudinal_rotocraft;
+    concept_monorotored_rotocraft;
+    concept_multirotored_rotocraft;
+    concept_synchropter;
+    concept_transverse_rotocraft;
+    concept_twinrotored_rotocraft;
+    concept_glider;
+    concept_hangglider;
+    concept_mass_center_driven_glider;
+    concept_aerodynamic_driven_glider;
+    concept_convertoplane;
+    concept_parachute;;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: sb_d_of_aviation;;
+    <= nrel_sc_text_translation: ...
+        (*
+             -> "file://sb_d_of_aviation.html"(*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Пр.О. авиации)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+            -> concept_aircraft;;
+            -> concept_aerodynamic_aircraft;;
+        *);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: sb_d_of_aviation;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Слово "авиация" происходит от франц. aviation, из лат. avis «птица»](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Пр.О авиации)](*<- lang_ru;;*);;
+*);;

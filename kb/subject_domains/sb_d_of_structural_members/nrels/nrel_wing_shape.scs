@@ -1,0 +1,28 @@
+sc_node_norole_relation -> nrel_wing_shape;;
+
+nrel_wing_shape => nrel_main_idtf: [форма крыла*](*<- lang_ru;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: nrel_wing_shape;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> "file://htmls/nrel_wing_shape.html"(*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(форма крыла)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+            -> norole_relation;;
+            -> nrel_first_domain;;
+            -> concept_aerodynamic_aircraft;;
+        *);;
+*);;
+
+nrel_wing_shape => nrel_first_domain: concept_aerodynamic_aircraft;;
+nrel_wing_shape => nrel_second_domain: concept_geometric_shape;;
+
+binary_relation -> nrel_wing_shape;;
+antireflexive_relation -> nrel_wing_shape;;
+antitransitive_relation -> nrel_wing_shape;;
+antisymmetric_relation -> nrel_wing_shape;;
+oriented_relation -> nrel_wing_shape;;

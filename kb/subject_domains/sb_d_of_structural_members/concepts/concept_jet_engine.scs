@@ -1,0 +1,25 @@
+sc_node_not_relation -> concept_jet_engine;;
+concept_jet_engine => nrel_main_idtf: [реактивный двигатель](*<- lang_ru ;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_jet_engine;;
+    <= nrel_sc_text_translation: ...
+        (*
+             -> "file://htmls/concept_jet_engine.html"(*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(реактивный двигатель)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+            -> concept_power_unit;;
+        *);;
+*);;
+
+concept_jet_engine <- rrel_key_sc_element: ...
+(*
+    <- illustration;;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> "file://images/concept_jet_engine.jpg";;
+    *);;
+*);;

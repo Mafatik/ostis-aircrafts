@@ -1,0 +1,22 @@
+sc_node_not_relation -> concept_motorless_aircraft;;
+concept_motorless_aircraft => nrel_main_idtf: [бездвигательный летательный аппарат](*<- lang_ru ;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_motorless_aircraft;;
+    <= nrel_sc_text_translation: ...
+        (*
+             -> "file://htmls/concept_motorless_aircraft.html"(*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(бездвигательный летательный аппарат)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+            -> concept_aircraft;;
+            -> concept_power_unit;;
+        *);;
+*);;
+
+concept_motorless_aircraft => nrel_inclusion:
+    concept_free_balloon;
+    concept_glider;
+    concept_parachute;;

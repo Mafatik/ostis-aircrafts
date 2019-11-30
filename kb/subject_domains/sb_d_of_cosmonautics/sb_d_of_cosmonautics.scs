@@ -1,0 +1,28 @@
+sc_node_not_relation -> sb_d_of_cosmonautics;;
+sb_d_of_cosmonautics => nrel_main_idtf: [Предметная область космлнавтики](*<- lang_ru ;;*);;
+
+sb_d_of_cosmonautics <= nrel_private_subject_domain: sb_d_of_aircrafts;;
+
+sb_d_of_cosmonautics -> rrel_maximum_studied_object_class: 
+	concept_rocketdynamic_aircraft;;
+
+sb_d_of_cosmonautics -> rrel_not_maximum_studied_object_class:
+    concept_interplanetary_station;
+    concept_orbital_station;
+    concept_nonreturned_spacecraft;
+    concept_returned_spacecraft;;
+   
+definition -> ...
+(*
+    -> rrel_key_sc_element: sb_d_of_cosmonautics;;
+    <= nrel_sc_text_translation: ...
+        (*
+             -> "file://sb_d_of_cosmonautics.html"(*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Предметная область космонавтики)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+            -> concept_aircraft;;
+            -> concept_spacecraft;;
+        *);;
+*);;

@@ -1,0 +1,26 @@
+sc_node_not_relation -> concept_vtol;;
+concept_vtol => nrel_main_idtf: [самолет вертикального взлета и посадки](*<- lang_ru ;;*);;
+concept_vtol => nrel_idtf: [СВПП](*<- lang_ru ;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_vtol;;
+    <= nrel_sc_text_translation: ...
+        (*
+             -> "file://htmls/concept_vtol.html"(*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(самолет вертикального взлета и посадки)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+            -> concept_aeroplane;;
+        *);;
+*);;
+
+concept_vtol <- rrel_key_sc_element: ...
+(*
+    <- illustration;;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> "file://images/concept_vtol.jpg";;
+    *);;
+*);;
