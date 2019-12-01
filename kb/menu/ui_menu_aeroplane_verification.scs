@@ -5,11 +5,11 @@ ui_menu_aeroplane_verification => nrel_main_idtf: [Request of aeroplane verifica
 
 ui_menu_aeroplane_verification => ui_nrel_command_template:
 [*
-    _-> ._aeroplane_verification_instance
+    question_aeroplane_verification _-> ._question_aeroplane_verification_instance
     (*
         _-> ui_arg_1;;
     *);;
-    ._aeroplane_verification_instance _<- question;;
+    ._question_aeroplane_verification_instance _<- question;;
 *];;
 
 ui_menu_aeroplane_verification => ui_nrel_command_lang_template: [Запрос верификации самолета: $ui_arg_1] (*<- lang_ru;; *);;
