@@ -1,6 +1,6 @@
 sc_agent_of_search_operation => nrel_main_idtf:
-    [sc-агент поиска] (* <- lang_ru;; *);
-    [sc-agent of search] (* <- lang_en;; *);
+    [sc-агент верификации самолета] (* <- lang_ru;; *);
+    [sc-agent of aeroplane verification] (* <- lang_en;; *);
     <- abstract_sc_agent;
     =>nrel_primary_initiation_condition: (sc_event_add_output_arc =>question_initiated);
     =>nrel_initiation_condition_and_result: 
