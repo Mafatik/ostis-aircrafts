@@ -1,0 +1,39 @@
+sc_node_norole_relation -> nrel_cruise_speed;;
+
+nrel_cruise_speed => nrel_main_idtf: [круизная скорость*](*<- lang_ru;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: nrel_cruise_speed;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> "file://htmls/nrel_cruise_speed.html"(*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(круизная скорость*)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+            -> norole_relation;;
+            -> nrel_first_domain;;
+            -> nrel_second_domain;;
+            -> concept_aircraft;;
+            -> value;;
+            -> action_flight;;
+        *);;
+*);;
+
+nrel_cruise_speed => nrel_definitional_domain: ...
+(*
+    <= nrel_combination: ...
+    (*
+        -> concept_aircraft;;
+        -> value;;
+    *);;
+*);;
+nrel_cruise_speed => nrel_first_domain: concept_aircraft;;
+nrel_cruise_speed => nrel_srcond_domain: value;;
+
+binary_relation -> nrel_cruise_speed;;
+antireflexive_relation -> nrel_cruise_speed;;
+antitransitive_relation -> nrel_cruise_speed;;
+antisymmetric_relation -> nrel_cruise_speed;;
+oriented_relation -> nrel_cruise_speed;;

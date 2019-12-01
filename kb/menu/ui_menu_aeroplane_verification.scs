@@ -1,0 +1,16 @@
+ui_menu_aeroplane_verification <- ui_user_command_class_atom; ui_user_command_class_view_kb;;
+
+ui_menu_aeroplane_verification => nrel_main_idtf: [Запрос верификации самолета] (* <- lang_ru;; *);;
+ui_menu_aeroplane_verification => nrel_main_idtf: [Request of aeroplane verification] (* <- lang_en;; *);;
+
+ui_menu_aeroplane_verification => ui_nrel_command_template:
+[*
+    _-> ._aeroplane_verification_instance
+    (*
+        _-> ui_arg_1;;
+    *);;
+    ._aeroplane_verification_instance _<- question;;
+*];;
+
+ui_menu_aeroplane_verification => ui_nrel_command_lang_template: [Запрос верификации самолета: $ui_arg_1] (*<- lang_ru;; *);;
+ui_menu_aeroplane_verification => ui_nrel_command_lang_template: [Request of aeroplane verification: $ui_arg_1] (* <- lang_en;; *);;
