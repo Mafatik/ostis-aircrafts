@@ -1,0 +1,64 @@
+//сам агент
+
+scp_program ->proc_aeroplane_verification
+(*
+    ->rrel_params: .proc_aeroplane_verification_params
+    (*
+        -> rrel_1: rrel_in: _parameter;;
+        -> rrel_2: rrel_in: _answer;;
+    *);;
+
+
+    ->rrel_operators: .proc_aeroplane_verification_operator_set
+    (*
+        -> rrel_init: .proc_aeroplane_verification_operator1
+        (*
+            <- sys_search;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_const: 
+            [*
+                concept_aeroplane _-> _parameter;;
+
+                _parameter _=> nrel_max_takeoff_weight:: _max_takeoff_weight;;
+                _max_takeoff_weight _<- value;;
+
+                _parameter _=> nrel_ferry_range:: _ferry_range;;
+                _ferry_range _<- value;;
+
+                _parameter _=> nrel_payload:: _payload;;
+                _payload _<- value;;
+
+                _parameter _=> nrel_cruise_speed:: _cruise_speed;;
+                _cruise_speed _<- value;;
+            *];;
+            -> rrel_2: rrel_assign: rrel_scp_var: rrel_node: _elem_2_aeroplane_ver;;
+            -> rrel_3: rrel_fixed: rrel_scp_const: ...;;
+
+            => nrel_then: .proc_aeroplane_verification_operator_print_positive;;
+            => nrel_else: .proc_aeroplane_verification_operator_print_negative;;
+        *);;
+
+        -> .proc_aeroplane_verification_operator_print_positive
+        (*
+            <- printNl;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_const: [Valid];;
+
+            => nrel_goto: .proc_aeroplane_verification_operator_return;;
+        *);;
+
+        -> .proc_aeroplane_verification_operator_print_negative
+        (*
+            <- printNl;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_const: [Not valid];;
+
+            => nrel_goto: .proc_aeroplane_verification_operator_return;;
+        *);;
+
+        -> .proc_aeroplane_verification_operator_return
+        (*
+            <- return;;
+        *);;
+    *);;
+*);;

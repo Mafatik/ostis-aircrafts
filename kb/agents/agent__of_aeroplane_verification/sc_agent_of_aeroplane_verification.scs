@@ -1,6 +1,6 @@
 sc_agent_of_search_operation => nrel_main_idtf:
-    [sc-агент поиска] (* <- lang_ru;; *);
-    [sc-agent of search] (* <- lang_en;; *);
+    [sc-агент верификации самолета] (* <- lang_ru;; *);
+    [sc-agent of aeroplane verification] (* <- lang_en;; *);
     <- abstract_sc_agent;
     =>nrel_primary_initiation_condition: (sc_event_add_output_arc =>question_initiated);
     =>nrel_initiation_condition_and_result: 
@@ -11,7 +11,7 @@ sc_agent_of_search_operation => nrel_main_idtf:
     {
         question_initiated;
         question;
-        question_search_operation
+        question_aeroplane_verification
     };
     <- key_sc_element: ...
     (*
@@ -26,15 +26,15 @@ sc_agent_of_search_operation => nrel_main_idtf:
         <- platform_independent_abstract_sc_agent;;
         <= nrel_sc_agent_program:
         {
-            agent_proc_search_operation;
-            proc_search_operation
+            agent_proc_aeroplane_verification;
+            proc_aeroplane_verification
         };;
         ->sc_agent_of_search_operation_scp (* <- active_sc_agent;; *);;
     *);;
 
 ..sc_agent_of_search_operation_initiation_condition = 
 [*
-    question_search_operation _-> .._question;;
+    question_aeroplane_verification _-> .._question;;
     question_initiated _-> .._question;;
     question _-> .._question;;
     .._question _-> .._parameter;;
@@ -42,7 +42,7 @@ sc_agent_of_search_operation => nrel_main_idtf:
 
 ..sc_agent_of_search_operation_result =
 [*
-    question_search_operation _-> .._question;;
+    question_aeroplane_verification _-> .._question;;
     question_finished _-> .._question;;
     question _-> .._question;;
     .._question _=>nrel_answer:: .._answer;;
