@@ -6,9 +6,9 @@ scp_program ->proc_aeroplane_verification
         -> rrel_2: rrel_in: _answer;;
     *);;
 
-
     ->rrel_operators: .proc_aeroplane_verification_operator_set
     (*
+        //поиск элементов по шаблону
         -> rrel_init: .proc_aeroplane_verification_operator1
         (*
             <- sys_search;;
@@ -37,8 +37,22 @@ scp_program ->proc_aeroplane_verification
 				*);;
 			*);;
 
-            => nrel_then: .proc_aeroplane_verification_operator_print_positive;;
+            => nrel_then: .proc_aeroplane_verification_operator_2;;
             => nrel_else: .proc_aeroplane_verification_operator_print_negative;;
+        *);;
+
+        //самолет помечается как валидный
+        -> .proc_aeroplane_verification_operator_2
+        (*
+            <- genElStr5;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_const: concept_aeroplane;;
+            -> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc_1;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _parameter;;
+            -> rrel_4: rrel_assign: rrel_scp_var:  rrel_const: rrel_pos_const_perm: _arc_2;;
+            -> rrel_5: rrel_fixed: rrel_scp_const: rrel_valid_aircraft;;
+
+            => nrel_goto: .proc_aeroplane_verification_operator_print_positive;;
         *);;
 
         -> .proc_aeroplane_verification_operator_print_positive
