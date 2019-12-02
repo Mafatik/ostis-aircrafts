@@ -1,6 +1,6 @@
 agent_proc_aeroplane_verification => nrel_main_idtf: 
-    [агентная scp-программа поиска] (* <- lang_ru;; *);
-    [agent scp-program of search] (* <- lang_en;; *);
+    [агентная scp-программа верификации самолета] (* <- lang_ru;; *);
+    [agent scp-program of aeroplane verification] (* <- lang_en;; *);
     <- agent_scp_program;;
 
 scp_program ->agent_proc_aeroplane_verification
