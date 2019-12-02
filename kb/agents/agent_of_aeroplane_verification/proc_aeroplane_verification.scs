@@ -1,5 +1,3 @@
-//сам агент
-
 scp_program ->proc_aeroplane_verification
 (*
     ->rrel_params: .proc_aeroplane_verification_params
@@ -17,22 +15,27 @@ scp_program ->proc_aeroplane_verification
 
             -> rrel_1: rrel_fixed: rrel_scp_const: 
             [*
-                concept_aeroplane _-> _parameter;;
+                concept_aeroplane _-> _aeroplane;;
 
-                _parameter _=> nrel_max_takeoff_weight:: _max_takeoff_weight;;
                 _max_takeoff_weight _<- value;;
-
-                _parameter _=> nrel_ferry_range:: _ferry_range;;
-                _ferry_range _<- value;;
-
-                _parameter _=> nrel_payload:: _payload;;
+                _range _<- value;;
                 _payload _<- value;;
+                _speed _<- value;;
 
-                _parameter _=> nrel_cruise_speed:: _cruise_speed;;
-                _cruise_speed _<- value;;
+                _aeroplane _=> nrel_max_takeoff_weight:: _max_takeoff_weight;;
+                _aeroplane _=> nrel_ferry_range:: _range;;
+                _aeroplane _=> nrel_max_payload:: _payload;;
+                _aeroplane _=> nrel_cruise_speed:: _speed;;
             *];;
-            -> rrel_2: rrel_assign: rrel_scp_var: rrel_node: _elem_2_aeroplane_ver;;
-            -> rrel_3: rrel_fixed: rrel_scp_const: ...;;
+            -> rrel_2: rrel_assign: rrel_scp_var: _elem_2_aeroplane_ver;;
+            -> rrel_3: rrel_fixed: rrel_scp_const: ...
+            (*
+				-> ...
+				(* 
+					-> rrel_1: rrel_fixed: rrel_scp_const: _aeroplane;;
+                	-> rrel_2: rrel_fixed: rrel_scp_var: _parameter;;
+				*);;
+			*);;
 
             => nrel_then: .proc_aeroplane_verification_operator_print_positive;;
             => nrel_else: .proc_aeroplane_verification_operator_print_negative;;
@@ -51,11 +54,11 @@ scp_program ->proc_aeroplane_verification
         (*
             <- printNl;;
 
-            -> rrel_1: rrel_fixed: rrel_scp_const: [Not valid];;
+            -> rrel_1: rrel_fixed: rrel_scp_const: [Invalid];;
 
             => nrel_goto: .proc_aeroplane_verification_operator_return;;
         *);;
-
+        
         -> .proc_aeroplane_verification_operator_return
         (*
             <- return;;

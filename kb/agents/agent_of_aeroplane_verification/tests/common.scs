@@ -1,0 +1,9 @@
+sc_node_not_relation -> weight;;
+sc_node_not_relation -> range;;
+sc_node_not_relation -> payload;;
+sc_node_not_relation -> speed;;
+
+weight <- value;;
+range <- value;;
+payload <- value;;
+speed <- value;;
