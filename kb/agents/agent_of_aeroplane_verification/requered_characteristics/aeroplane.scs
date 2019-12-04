@@ -1,0 +1,4 @@
+concept_aeroplane => nrel_requered_characteristics: nrel_max_takeoff_weight;;
+concept_aeroplane => nrel_requered_characteristics: nrel_ferry_range;;
+concept_aeroplane => nrel_requered_characteristics: nrel_max_payload;;
+concept_aeroplane => nrel_requered_characteristics: nrel_cruise_speed;;

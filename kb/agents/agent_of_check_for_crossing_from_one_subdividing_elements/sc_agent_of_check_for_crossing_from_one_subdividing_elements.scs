@@ -34,7 +34,7 @@ sc_agent_of_check_for_crossing_from_one_subdividing_elements
 	-> sc_agent_of_check_for_crossing_from_one_subdividing_elements_scp   
 		(* <- active_sc_agent;; *);;
 	*);;
-
+/////////////////////////////
 ..sc_agent_of_check_for_crossing_from_one_subdividing_elements_condition
 = [*
 	action_of_check_for_crossing_from_one_subdividing_elements _-> .._question;;

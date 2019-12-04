@@ -1,0 +1,37 @@
+sc_node_norole_relation -> nrel_requered_characteristics;;
+
+nrel_requered_characteristics => nrel_main_idtf: [обязательная характеристика*](*<- lang_ru;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: nrel_requered_characteristics;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> "file://htmls/nrel_requered_characteristics.html"(*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(обязательная характеристика*)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+            -> norole_relation;;
+            -> nrel_first_domain;;
+            -> nrel_second_domain;;
+            -> concept_aircraft;;
+        *);;
+*);;
+
+nrel_requered_characteristics => nrel_definitional_domain: ...
+(*
+    <= nrel_combination: ...
+    (*
+        -> concept_aircraft;;
+        -> norole_relation;;
+    *);;
+*);;
+nrel_requered_characteristics => nrel_first_domain: concept_aircraft;;
+nrel_requered_characteristics => nrel_srcond_domain: value;;
+
+binary_relation -> nrel_requered_characteristics;;
+antireflexive_relation -> nrel_requered_characteristics;;
+antitransitive_relation -> nrel_requered_characteristics;;
+antisymmetric_relation -> nrel_requered_characteristics;;
+oriented_relation -> nrel_requered_characteristics;;
