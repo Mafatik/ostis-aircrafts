@@ -1,6 +1,8 @@
 sc_node_not_relation -> concept_aeroplane;;
 concept_aeroplane => nrel_main_idtf: [самолет](*<- lang_ru ;;*);;
 
+concept_aircraft => nrel_inclusion: concept_aeroplane;;
+
 definition -> ...
 (*
     -> rrel_key_sc_element: concept_aeroplane;;

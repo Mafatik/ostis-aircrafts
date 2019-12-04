@@ -13,7 +13,7 @@ scp_program ->agent_proc_aeroplane_verification
 
     -> rrel_operators: .agent_proc_aeroplane_verification_operator_set
     (*
-        ->rrel_init: .agent_proc_aeroplane_verification_operator1
+        -> rrel_init: .agent_proc_aeroplane_verification_operator1
         (*
             <- searchElStr3;;
 
