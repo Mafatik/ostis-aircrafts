@@ -1,0 +1,38 @@
+sc_node_norole_relation -> nrel_payload;;
+
+nrel_payload => nrel_main_idtf: [полезная нагрузка*](*<- lang_ru;;*);;
+
+definition -> ...
+(*
+-> rrel_key_sc_element: nrel_payload;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> "file://htmls/nrel_payload.html"(*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(полезная нагрузка*)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+            -> norole_relation;;
+            -> nrel_first_domain;;
+            -> nrel_second_domain;;
+            -> concept_spacecraft;;
+            -> concept_launch_vehicle;;
+        *);;
+*);;
+
+nrel_payload => nrel_definitional_domain: ...
+(*
+    <= nrel_combination: ...
+    (*
+        -> concept_aircraft;;
+        -> concept_aircraft_model;;
+    *);;
+*);;
+nrel_payload => nrel_first_domain: concept_launch_vehicle;;
+nrel_payload => nrel_srcond_domain: concept_spacecraft;;
+
+binary_relation -> nrel_payload;;
+antireflexive_relation -> nrel_payload;;
+antitransitive_relation -> nrel_payload;;
+antisymmetric_relation -> nrel_payload;;
+oriented_relation -> nrel_payload;;

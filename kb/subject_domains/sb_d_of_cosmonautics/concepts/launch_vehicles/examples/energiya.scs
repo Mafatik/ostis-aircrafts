@@ -1,0 +1,13 @@
+Energiya => nrel_main_idtf: [ракета-носитель Энергия](*<- lang_ru;;*);;
+
+concept_launch_vehicle -> Energiya;;
+Energiya => nrel_payload: Buran;;
+
+Energiya <- rrel_key_sc_element: ...
+(*
+    <- illustration;;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> "file://images/energiya.jpg";;
+    *);;
+*);;

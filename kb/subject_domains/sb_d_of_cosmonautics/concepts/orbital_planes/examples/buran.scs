@@ -25,7 +25,16 @@ Buran <- rrel_key_sc_element: ...
     *);;
 *);;
 
-boeing_ch_47 => nrel_manufacturer: molniya;;
+Buran <- rrel_key_sc_element: ...
+(*
+    <- illustration;;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> "file://images/buran.jpg";;
+    *);;
+*);;
 
-boeing_ch_47 => nrel_max_takeoff_weight: [105 тонн];;
-boeing_ch_47 => nrel_max_payload: [30 тонн];;
+Buran => nrel_manufacturer: molniya;;
+
+Buran => nrel_max_takeoff_weight: [105 тонн];;
+Buran => nrel_max_payload: [30 тонн];;

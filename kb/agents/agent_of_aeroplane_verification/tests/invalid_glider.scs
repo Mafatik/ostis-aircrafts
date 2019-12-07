@@ -1,0 +1,5 @@
+sc_node_not_relation -> invalid_glider;;
+concept_glider -> invalid_glider;;
+
+// invalid_glider => nrel_max_takeoff_weight: weight;;
+// invalid_glider => nrel_service_ceiling: ceiling;;
