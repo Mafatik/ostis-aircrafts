@@ -11,3 +11,5 @@ Energiya <- rrel_key_sc_element: ...
         -> "file://images/energiya.jpg";;
     *);;
 *);;
+
+Energiya -> rrel_marching_power_unit: rd0120;;
