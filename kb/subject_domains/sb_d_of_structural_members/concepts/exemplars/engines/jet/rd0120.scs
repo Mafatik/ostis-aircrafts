@@ -1,0 +1,11 @@
+concept_jet_engine -> rd0120;;
+rd0120 => nrel_main_idtf: [РД0120](*<- lang_ru;;*);;
+
+rd0120 <- rrel_key_sc_element: ...
+(*
+    <- illustration;;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> "file://images/rd0120.jpg";;
+    *);;
+*);;

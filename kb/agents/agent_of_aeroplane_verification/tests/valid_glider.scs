@@ -1,0 +1,7 @@
+sc_node_not_relation -> valid_glider;;
+concept_glider -> valid_glider;;
+
+valid_glider => nrel_max_payload: payload;;
+valid_glider => nrel_max_takeoff_weight: weight;;
+valid_glider => nrel_service_ceiling: ceiling;;
+valid_glider => nrel_cruise_speed: speed;;

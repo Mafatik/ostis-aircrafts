@@ -190,20 +190,21 @@ scp_program -> proc_aircraft_verification
             -> rrel_2: rrel_assign: rrel_scp_var: rrel_neg: rrel_pos_const_perm: _arc;;
             -> rrel_3: rrel_fixed: rrel_scp_var: _class_arc;;
 
-            => nrel_goto: .proc_aircraft_verification_operator_1_EBE;;
+            // => nrel_goto: .proc_aircraft_verification_operator_1_EBE;;
+            => nrel_goto: .proc_aircraft_verification_operator_1_EBF;;
         *);;
 
         // добавляем летательный аппарат в ответ
-        -> .proc_aircraft_verification_operator_1_EBE
-        (*
-           <- genElStr3;;
+        // -> .proc_aircraft_verification_operator_1_EBE
+        // (*
+        //    <- genElStr3;;
 
-            -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
-            -> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _answer_arc;;
-            -> rrel_3: rrel_fixed: rrel_scp_var: _instance;;
+        //     -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+        //     -> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _answer_arc;;
+        //     -> rrel_3: rrel_fixed: rrel_scp_var: _instance;;
 
-            => nrel_goto: .proc_aircraft_verification_operator_1_EBF;;
-        *);;
+        //     => nrel_goto: .proc_aircraft_verification_operator_1_EBF;;
+        // *);;
 
         // удаляем дугу между временным множеством и летательным аппаратом
         -> .proc_aircraft_verification_operator_1_EBF

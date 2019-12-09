@@ -1,0 +1,38 @@
+sc_node_norole_relation -> nrel_launch_vehicle;;
+
+nrel_launch_vehicle => nrel_main_idtf: [ракета-носитель*](*<- lang_ru;;*);;
+
+definition -> ...
+(*
+-> rrel_key_sc_element: nrel_launch_vehicle;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> "file://htmls/nrel_launch_vehicle.html"(*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(ракета-носитель*)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+            -> norole_relation;;
+            -> nrel_first_domain;;
+            -> nrel_second_domain;;
+            -> concept_aircraft;;
+            -> concept_aircraft_model;;
+        *);;
+*);;
+
+nrel_launch_vehicle => nrel_definitional_domain: ...
+(*
+    <= nrel_combination: ...
+    (*
+        -> concept_aircraft;;
+        -> concept_aircraft_model;;
+    *);;
+*);;
+nrel_launch_vehicle => nrel_first_domain: concept_aircraft;;
+nrel_launch_vehicle => nrel_srcond_domain: concept_aircraft_model;;
+
+binary_relation -> nrel_launch_vehicle;;
+antireflexive_relation -> nrel_launch_vehicle;;
+antitransitive_relation -> nrel_launch_vehicle;;
+antisymmetric_relation -> nrel_launch_vehicle;;
+oriented_relation -> nrel_launch_vehicle;;
