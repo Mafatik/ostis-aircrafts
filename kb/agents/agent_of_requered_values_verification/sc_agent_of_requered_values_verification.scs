@@ -11,7 +11,7 @@ sc_agent_of_search_operation => nrel_main_idtf:
     {
         question_initiated;
         question;
-        question_aeroplane_verification
+        question_requered_values_verification
     };
     <- key_sc_element: ...
     (*
@@ -26,7 +26,7 @@ sc_agent_of_search_operation => nrel_main_idtf:
         <- platform_independent_abstract_sc_agent;;
         <= nrel_sc_agent_program:
         {
-            agent_proc_aeroplane_verification;
+            agent_proc_requered_values_verification;
             proc_aeroplane_verification
         };;
         ->sc_agent_of_search_operation_scp (* <- active_sc_agent;; *);;
@@ -34,7 +34,7 @@ sc_agent_of_search_operation => nrel_main_idtf:
 
 ..sc_agent_of_search_operation_initiation_condition = 
 [*
-    question_aeroplane_verification _-> .._question;;
+    question_requered_values_verification _-> .._question;;
     question_initiated _-> .._question;;
     question _-> .._question;;
     .._question _-> .._parameter;;
@@ -42,7 +42,7 @@ sc_agent_of_search_operation => nrel_main_idtf:
 
 ..sc_agent_of_search_operation_result =
 [*
-    question_aeroplane_verification _-> .._question;;
+    question_requered_values_verification _-> .._question;;
     question_finished _-> .._question;;
     question _-> .._question;;
     .._question _=>nrel_answer:: .._answer;;

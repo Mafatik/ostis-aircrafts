@@ -5,11 +5,11 @@ ui_menu_agent_of_requered_values_verification => nrel_main_idtf: [Request of ver
 
 ui_menu_agent_of_requered_values_verification => ui_nrel_command_template:
 [*
-    question_aeroplane_verification _-> ._question_aircraft_verification_instance
+    question_requered_values_verification _-> ._question_requered_values_verification_instance
     (*
         _-> ui_arg_1;;
     *);;
-    ._question_aircraft_verification_instance _<- question;;
+    ._question_requered_values_verification_instance _<- question;;
 *];;
 
 ui_menu_agent_of_requered_values_verification => ui_nrel_command_lang_template: [Запрос верификации необходимых величин: $ui_arg_1] (*<- lang_ru;; *);;
