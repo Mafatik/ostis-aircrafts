@@ -72,7 +72,7 @@ scp_program -> proc_aeroplane_verification
 
             -> rrel_1: rrel_fixed: rrel_scp_const: [Valid];;
 
-            => nrel_goto: .proc_aeroplane_verification_operator_1_DC;; // следующий летательный аппарат
+            => nrel_goto: .proc_aeroplane_verification_operator_1_DC;;
         *);;
 
         // ищем дугу между классом и летательным аппаратом
