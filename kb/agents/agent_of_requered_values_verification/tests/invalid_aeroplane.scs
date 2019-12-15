@@ -1,7 +1,0 @@
-sc_node_not_relation -> invalid_aeroplane;;
-concept_aeroplane -> invalid_aeroplane;;
-
-invalid_aeroplane => nrel_max_takeoff_weight: weight;;
-invalid_aeroplane => nrel_ferry_range: range;;
-invalid_aeroplane => nrel_max_payload: payload;;
-//invalid_aeroplane => nrel_cruise_speed: speed;;

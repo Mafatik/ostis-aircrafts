@@ -1,0 +1,21 @@
+sc_node_not_relation -> weight; <- value;;
+sc_node_not_relation -> range; <- value;;
+sc_node_not_relation -> payload; <- value;;
+sc_node_not_relation -> speed; <- value;;
+sc_node_not_relation -> ceiling; <- value;;
+
+sc_node_not_relation -> invalid_aeroplane;;
+concept_aeroplane -> invalid_aeroplane;;
+
+invalid_aeroplane => nrel_max_takeoff_weight: weight;;
+invalid_aeroplane => nrel_ferry_range: range;;
+invalid_aeroplane => nrel_max_payload: payload;;
+//invalid_aeroplane => nrel_cruise_speed: speed;;
+
+sc_node_not_relation -> valid_aeroplane;;
+concept_aeroplane -> valid_aeroplane;;
+
+valid_aeroplane => nrel_max_takeoff_weight: weight;;
+valid_aeroplane => nrel_ferry_range: range;;
+valid_aeroplane => nrel_max_payload: payload;;
+valid_aeroplane => nrel_cruise_speed: speed;;
