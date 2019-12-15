@@ -1,0 +1,16 @@
+ui_menu_agent_of_requered_values_verification <- ui_user_command_class_atom; ui_user_command_class_view_kb;;
+
+ui_menu_agent_of_requered_values_verification => nrel_main_idtf: [Запрос верификации необходимых величин] (* <- lang_ru;; *);;
+ui_menu_agent_of_requered_values_verification => nrel_main_idtf: [Request of verification requered values] (* <- lang_en;; *);;
+
+ui_menu_agent_of_requered_values_verification => ui_nrel_command_template:
+[*
+    question_aeroplane_verification _-> ._question_aircraft_verification_instance
+    (*
+        _-> ui_arg_1;;
+    *);;
+    ._question_aircraft_verification_instance _<- question;;
+*];;
+
+ui_menu_agent_of_requered_values_verification => ui_nrel_command_lang_template: [Запрос верификации необходимых величин: $ui_arg_1] (*<- lang_ru;; *);;
+ui_menu_agent_of_requered_values_verification => ui_nrel_command_lang_template: [Request of verification requered values: $ui_arg_1] (* <- lang_en;; *);;
