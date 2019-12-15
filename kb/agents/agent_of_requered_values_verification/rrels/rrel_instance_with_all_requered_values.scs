@@ -1,0 +1,22 @@
+sc_node_role_relation -> rrel_instance_with_all_requered_values;;
+
+rrel_instance_with_all_requered_values => nrel_main_idtf: [экземпляр со всеми необходимыми величинами'](*<- lang_ru;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: rrel_instance_with_all_requered_values;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> "file://../htmls/rrel_instance_with_all_requered_values.html"(*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Экземпляр со всеми необходимыми величинами')](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+            -> role_relation;;
+            -> concept_aircraft;;
+        *);;
+*);;
+
+rrel_instance_with_all_requered_values <- role_relation;;
+rrel_instance_with_all_requered_values <- binary_relation;;
+rrel_instance_with_all_requered_values <- oriented_relation;;

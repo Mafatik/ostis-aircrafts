@@ -2,13 +2,13 @@ scp_program -> proc_aeroplane_verification
 (*
     -> rrel_params: .proc_aeroplane_verification_params
     (*
-        -> rrel_1: rrel_in: _parameter;; // класс ЛА
-        -> rrel_2: rrel_in: _answer;; // все невалидные ЛА
+        -> rrel_1: rrel_in: _parameter;; // класс
+        -> rrel_2: rrel_in: _answer;;
     *);;
 
     -> rrel_operators: .proc_aeroplane_verification_operator_set
     (*
-        // копируем все летательные аппараты во временное множество
+        // копируем все экземпляры во временное множество
         -> rrel_init: .proc_aeroplane_verification_operator_1_A
         (*
             <- searchSetStr3;;
@@ -22,7 +22,7 @@ scp_program -> proc_aeroplane_verification
             => nrel_else: .proc_aeroplane_verification_operator_print_no_instance;;
         *);;
 
-        // перебор каждого летательного аппарата во временном множестве
+        // перебор каждого экземпляра во временном множестве
         -> .proc_aeroplane_verification_operator_1_B
         (*
             <- searchElStr3;;
@@ -32,10 +32,10 @@ scp_program -> proc_aeroplane_verification
             -> rrel_3: rrel_assign: rrel_scp_var: rrel_const: rrel_node: _instance;;
 
             => nrel_then: .proc_aeroplane_verification_operator_1_C;;
-            => nrel_else: .proc_aeroplane_verification_operator_return;; // перебраны все летательные аппараты
+            => nrel_else: .proc_aeroplane_verification_operator_return;; // перебраны все экземпляры
         *);;
 
-        // копируем все обязательные характеристики для класса летательного аппарата во временное множество
+        // копируем все обязательные величины для класса во временное множество
         -> .proc_aeroplane_verification_operator_1_C
         (*
             <- searchSetStr5;;
@@ -51,7 +51,7 @@ scp_program -> proc_aeroplane_verification
             => nrel_else: .proc_aeroplane_verification_operator_print_no_req;;
         *);;
 
-        // перебор каждой обязательной характеристики
+        // перебор каждой обязательной величины
         -> .proc_aeroplane_verification_operator_1_DA
         (*
              <- searchElStr3;;
@@ -61,11 +61,11 @@ scp_program -> proc_aeroplane_verification
             -> rrel_3: rrel_assign: rrel_scp_var: rrel_norole_relation: _req_nrel;;
 
             => nrel_then: .proc_aeroplane_verification_operator_1_EA;;
-            => nrel_else: .proc_aeroplane_verification_operator_1_DB;; // все обязательные характеристики перебраны,
-            // летательный аппарат валиден
+            => nrel_else: .proc_aeroplane_verification_operator_1_DB;; // все обязательные величины перебраны,
+            // экземпляр валиден
         *);;
 
-        // вывод на экран сообщения о том, что летательный аппарат валиден
+        // вывод на экран сообщения о том, что экземпляр валиден
         -> .proc_aeroplane_verification_operator_1_DB
         (*
             <- printNl;;
@@ -75,7 +75,7 @@ scp_program -> proc_aeroplane_verification
             => nrel_goto: .proc_aeroplane_verification_operator_1_DC;;
         *);;
 
-        // ищем дугу между классом и летательным аппаратом
+        // ищем дугу между классом и экземпляром
         -> .proc_aeroplane_verification_operator_1_DC
         (*
             <- searchElStr3;;
@@ -87,26 +87,26 @@ scp_program -> proc_aeroplane_verification
             => nrel_goto: .proc_aeroplane_verification_operator_1_DD;;
         *);;
 
-        // помечаем летательный аппарат как валидный
+        // помечаем экземпляр как валидный
         -> .proc_aeroplane_verification_operator_1_DD
         (*
             <- genElStr3;;
 
-            -> rrel_1: rrel_fixed: rrel_scp_const: rrel_valid_aircraft;;
+            -> rrel_1: rrel_fixed: rrel_scp_const: rrel_instance_with_all_requered_values;;
             -> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc;;
             -> rrel_3: rrel_fixed: rrel_scp_var: _class_arc;;
 
             => nrel_goto: .proc_aeroplane_verification_operator_1_DE;;
         *);;
 
-        // удаляем дугу между текущим летательным аппаратом и временным множеством летательных аппаратов
+        // удаляем дугу между текущим экземпляром и временным множеством экземпляров
         -> .proc_aeroplane_verification_operator_1_DE
         (*
             <- eraseEl;;
 
             -> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _instance_arc;;
 
-            => nrel_goto: .proc_aeroplane_verification_operator_1_B;; // новый летательный аппарат
+            => nrel_goto: .proc_aeroplane_verification_operator_1_B;; // новый экземпляр
         *);;
 
         // поиск элементов по шаблону
@@ -139,17 +139,17 @@ scp_program -> proc_aeroplane_verification
             => nrel_else: .proc_aeroplane_verification_operator_1_EBA;;
         *);;
 
-        //удаляем дугу между текущим отношением и временным множеством
+        // удаляем дугу между текущей величиной и временным множеством величин
         -> .proc_aeroplane_verification_operator_1_EAA
         (*
             <- eraseEl;;
 
             -> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _req_nrel_arc;;
 
-            => nrel_goto: .proc_aeroplane_verification_operator_1_DA;; // слкдующее отношение
+            => nrel_goto: .proc_aeroplane_verification_operator_1_DA;; // следующая величина
         *);;
 
-        // вывод на экран текущего летательного аппарата
+        // вывод на экран текущего экземпляра
         -> .proc_aeroplane_verification_operator_1_EBA
         (*
             <-printEl;;
@@ -159,7 +159,7 @@ scp_program -> proc_aeroplane_verification
             => nrel_goto: .proc_aeroplane_verification_operator_1_EBB;;
         *);;
 
-        // вывод на экран сообщения о том, что летательный аппарат не валиден
+        // вывод на экран сообщения о том, что экземпляр невалиден
         -> .proc_aeroplane_verification_operator_1_EBB
         (*
             <- printNl;;
@@ -169,17 +169,31 @@ scp_program -> proc_aeroplane_verification
             => nrel_goto: .proc_aeroplane_verification_operator_1_EBC;; 
         *);;
 
-        // удаляем дугу между временным множеством и летательным аппаратом
+        // ищем дугу между классом и экземпляром
         -> .proc_aeroplane_verification_operator_1_EBC
         (*
-            <- eraseEl;;
+            <- searchElStr3;;
 
-            -> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _instance_arc;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: _parameter;;
+            -> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _class_arc;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _instance;;
 
-            => nrel_goto: .proc_aeroplane_verification_operator_1_B;; // новый летательный аппарат
+            => nrel_goto: .proc_aeroplane_verification_operator_1_EBD;;
         *);;
 
-        // вывод сообщения о том, что у данного класса летательных аппаратов нет экземпляров
+        // помечаем экземпляр как невалидный
+        -> .proc_aeroplane_verification_operator_1_EBD
+        (*
+            <- genElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_const: rrel_instance_with_all_requered_values;;
+            -> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: rrel_neg: _arc;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _class_arc;;
+
+            => nrel_goto: .proc_aeroplane_verification_operator_1_DE;; 
+        *);;
+
+        // вывод сообщения о том, что у данного класса нет экземпляров
         -> .proc_aeroplane_verification_operator_print_no_instance
         (*
             <- printNl;;
@@ -189,7 +203,7 @@ scp_program -> proc_aeroplane_verification
             => nrel_goto: .proc_aeroplane_verification_operator_return;;
         *);;
 
-        // вывод сообщения о том, что у данного класса летательных аппаратов нет обязательных характеристик
+        // вывод сообщения о том, что у данного класса нет обязательных величин
         -> .proc_aeroplane_verification_operator_print_no_req
         (*
             <- printNl;;
